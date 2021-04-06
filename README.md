@@ -1,16 +1,12 @@
 # marsey_nails
 
-A new Flutter project.
+Un proyecto de Marsey's Nails 
 
-## Getting Started
+### Getting Started
 
-This project is a starting point for a Flutter application.
+Este proyecto fue creado para la materia de Negocios Electronicos, en la cual se busca integrar los conocimientos que se adquieren en la materia y complementarlo con la parte del desarrollo de una solucion para una empresa o negocio en especifico. 
 
-A few resources to get you started if this is your first Flutter project:
+Entre algunas referencias bibliograficas relacionadas con el framework utilizado para la elaboracion de estre proyecto podemos mencionar:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Documentacion de Flutter](https://flutter.dev/docs)
+- [Ejemplos de Flutter](https://flutter.dev/docs/cookbook)
