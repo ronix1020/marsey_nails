@@ -1,8 +1,8 @@
-# marsey_nails
+# Marsey's Nails
 
 Un proyecto de Marsey's Nails 
 
-### Getting Started
+### Acerca de
 
 Este proyecto fue creado para la materia de Negocios Electronicos, en la cual se busca integrar los conocimientos que se adquieren en la materia y complementarlo con la parte del desarrollo de una solucion para una empresa o negocio en especifico. 
 
