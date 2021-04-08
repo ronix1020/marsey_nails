@@ -29,48 +29,50 @@ class _BodyTutoWidgetState extends State<BodyTutoWidget> {
     return SafeArea(
       child: SizedBox(
         width: double.infinity,
-        child: Column(
-          children: [
-            Expanded(
-              flex: 3,
-              child: PageView.builder(
-                  onPageChanged: (value) {
-                    setState(() {
-                      currentPage = value;
-                    });
-                  },
-                  itemCount: tutoDatos.length,
-                  itemBuilder: (context, index) => TutoContent(
-                        image: tutoDatos[index]["image"],
-                        text: tutoDatos[index]["text"],
-                      )),
-            ),
-            Expanded(
-              flex: 2,
-              child: Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: getProportionateScreenWidth(20)),
-                child: Column(
-                  children: [
-                    Spacer(),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: List.generate(tutoDatos.length,
-                          (index) => buildPuntitos(index: index)),
-                    ),
-                    Spacer(flex: 1,),
-                    DefaultButton(
-                      text: 'Continuar',
-                      press: (){
-                         Navigator.pushNamed(context, 'inicio');
-                      },
-                    ),
-                    Spacer(),
-                  ],
+        child: Container(
+          child: Column(
+            children: [
+              Expanded(
+                flex: 3,
+                child: PageView.builder(
+                    onPageChanged: (value) {
+                      setState(() {
+                        currentPage = value;
+                      });
+                    },
+                    itemCount: tutoDatos.length,
+                    itemBuilder: (context, index) => TutoContent(
+                          image: tutoDatos[index]["image"],
+                          text: tutoDatos[index]["text"],
+                        )),
+              ),
+              Expanded(
+                flex: 2,
+                child: Padding(
+                  padding: EdgeInsets.symmetric(
+                      horizontal: getProportionateScreenWidth(20)),
+                  child: Column(
+                    children: [
+                      Spacer(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: List.generate(tutoDatos.length,
+                            (index) => buildPuntitos(index: index)),
+                      ),
+                      Spacer(flex: 1,),
+                      DefaultButton(
+                        text: 'Continuar',
+                        press: (){
+                           Navigator.pushNamed(context, 'inicio');
+                        },
+                      ),
+                      Spacer(),
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

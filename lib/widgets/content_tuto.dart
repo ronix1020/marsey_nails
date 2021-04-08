@@ -16,17 +16,10 @@ class TutoContent extends StatelessWidget {
     return Column(
       children: [
         Spacer(),
-        Image.asset(
-          'assets/images/logo_marsey.jpeg',
-          width: getProportionateScreenWidth(70),
-          fit: BoxFit.cover,
-        ),
-        Text(
-          "Marsey's Nails",
-          style: TextStyle(
-              fontSize: getProportionateScreenWidth(36),
-              color: Colors.purple[600],
-              fontWeight: FontWeight.bold),
+        CircleAvatar(
+        
+          radius: getProportionateScreenHeight(50),
+          backgroundImage: AssetImage('assets/images/logo_marsey.jpeg'),
         ),
         Spacer(
           flex: 2,
