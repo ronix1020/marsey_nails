@@ -43,7 +43,7 @@ class CardWidget extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.0),
           image: DecorationImage(
-            colorFilter: ColorFilter.mode(Colors.black, BlendMode.hardLight),
+            colorFilter: ColorFilter.mode(Colors.black, BlendMode.softLight),
             image: AssetImage("assets/images/$imagen.jpeg"),
             fit: BoxFit.cover,
           ),

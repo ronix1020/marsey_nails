@@ -85,7 +85,7 @@ class _BodyTutoWidgetState extends State<BodyTutoWidget> {
       height: 6,
       width: currentPage == index ? 20 : 6,
       decoration: BoxDecoration(
-        color: currentPage == index ? Colors.purple[600] : Colors.purple[400],
+        color: currentPage == index ? Colors.purple[600] : Colors.purple[100],
         borderRadius: BorderRadius.circular(3),
       ),
     );
