@@ -28,13 +28,6 @@ class TutoContent extends StatelessWidget {
               color: Colors.purple[600],
               fontWeight: FontWeight.bold),
         ),
-        Text(
-          text,
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            color: Colors.purple[400],
-          ),
-        ),
         Spacer(
           flex: 2,
         ),
@@ -42,7 +35,15 @@ class TutoContent extends StatelessWidget {
           image,
           height: getProportionateScreenHeight(250),
           width: getProportionateScreenWidth(225),
-        )
+        ),
+        Spacer(flex: 2,),
+        Text(
+          text,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.purple[400],
+          ),
+        ),
       ],
     );
   }

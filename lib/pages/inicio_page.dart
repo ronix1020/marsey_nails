@@ -12,17 +12,22 @@ class InicioPage extends StatelessWidget {
           Scaffold(
             backgroundColor: Colors.transparent,
             appBar: AppBar(
-              leading: Icon(Icons.store, color: _textColor),
-              title: Text("Marsey's Nails", style: TextStyle(color: _textColor)),
+              leading: Builder(
+                builder: (context) {
+                  return IconButton(
+                      icon: Icon(Icons.store, color: _textColor),
+                      onPressed: () => Navigator.pushNamed(context, '/'));
+                },
+              ),
+              title:
+                  Text("Marsey's Nails", style: TextStyle(color: _textColor)),
               centerTitle: true,
               backgroundColor: Colors.transparent,
               elevation: 0.0,
             ),
             body: Center(
               child: Column(
-                children: <Widget>[
-                  CardWidget()
-                ],
+                children: <Widget>[CardWidget()],
               ),
             ),
           ),

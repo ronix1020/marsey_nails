@@ -58,7 +58,7 @@ class _BodyTutoWidgetState extends State<BodyTutoWidget> {
                       children: List.generate(tutoDatos.length,
                           (index) => buildPuntitos(index: index)),
                     ),
-                    Spacer(flex: 3,),
+                    Spacer(flex: 1,),
                     DefaultButton(
                       text: 'Continuar',
                       press: (){
