@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:marsey_nails/widgets/card_generator_widget.dart';
 
 class CategoriaPage extends StatelessWidget {
   final String categoria;
 
   CategoriaPage(this.categoria);
+
+  //TO DO: debe hacerse una funcion para poder seleccionar la categoria de fotos
+  //Una 
 
   @override
   Widget build(BuildContext context) {
@@ -17,11 +21,7 @@ class CategoriaPage extends StatelessWidget {
             child: Column(
               children: [
                 Container(height: 100.0,),
-                Text('Has seleccionado $categoria'),
-                Text('Has seleccionado $categoria'),
-                Text('Has seleccionado $categoria'),
-                Text('Has seleccionado $categoria'),
-                Text('Has seleccionado $categoria'),
+                WidgetCard(imagen: 'acrilicas', texto: categoria ,colorText: Colors.white,)
               ],
             ),
           ),

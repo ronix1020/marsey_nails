@@ -1,9 +1,9 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:marsey_nails/widgets/card_generator_widget.dart';
 
 class CardWidget extends StatelessWidget {
-  final Color _textMoradoFuerte = Color.fromRGBO(136, 97, 214, 1);
   final Color _textBlanco = Colors.white;
 
   @override
@@ -39,28 +39,7 @@ class CardWidget extends StatelessWidget {
         Navigator.pushNamed(context, 'categoria',
             arguments: nombre);
       },
-      child: Container(
-        height: 120.0,
-        margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20.0),
-          image: DecorationImage(
-            colorFilter: ColorFilter.mode(Colors.black, BlendMode.softLight),
-            image: AssetImage("assets/images/$imagen.jpeg"),
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(nombre,
-                style: TextStyle(
-                    color: _textBlanco,
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.bold)),
-          ],
-        ),
-      ),
+      child: WidgetCard(texto: nombre, imagen: imagen, colorText: _textBlanco),
     );
   }
 }
