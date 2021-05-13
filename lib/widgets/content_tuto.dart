@@ -17,7 +17,6 @@ class TutoContent extends StatelessWidget {
       children: [
         Spacer(),
         CircleAvatar(
-        
           radius: getProportionateScreenHeight(50),
           backgroundImage: AssetImage('assets/images/logo_marsey.jpeg'),
         ),

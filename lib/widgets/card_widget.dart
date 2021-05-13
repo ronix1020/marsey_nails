@@ -20,22 +20,24 @@ class CardWidget extends StatelessWidget {
   }
 
   Widget _card(String imagen, String nombre, BuildContext context) {
-    final SnackBar snackBar = SnackBar(
-      content: Text("Has presionado $nombre"),
-      duration: Duration(seconds: 1),
-      backgroundColor: _textMoradoFuerte,
-      action: SnackBarAction(
-        label: 'Aceptar',
-        textColor: _textBlanco,
-        onPressed: (){
-          
-        },
-      ),
-    );
+    // final SnackBar snackBar = SnackBar(
+    //   content: Text("Has presionado $nombre"),
+    //   duration: Duration(seconds: 1),
+    //   backgroundColor: _textMoradoFuerte,
+    //   action: SnackBarAction(
+    //     label: 'Aceptar',
+    //     textColor: _textBlanco,
+    //     onPressed: (){
+
+    //     },
+    //   ),
+    // );
 
     return GestureDetector(
       onTap: () {
-        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        // ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        Navigator.pushNamed(context, 'categoria',
+            arguments: nombre);
       },
       child: Container(
         height: 120.0,
