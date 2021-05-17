@@ -1,0 +1,37 @@
+{
+    "acrilicas":[
+        {"nombreServicio":"acrilicas1", "imagen":"acrilicas"},
+        {"nombreServicio":"acrilicas2", "imagen":"acrilicas"},
+        {"nombreServicio":"acrilicas3", "imagen":"acrilicas"},
+        {"nombreServicio":"acrilicas4", "imagen":"acrilicas"},
+        {"nombreServicio":"acrilicas5", "imagen":"acrilicas"}
+    ],
+    "disenno2d":[
+        {"nombreServicio":"disenno1", "imagen":"disenno_2d"},
+        {"nombreServicio":"disenno2", "imagen":"disenno_2d"},
+        {"nombreServicio":"disenno3", "imagen":"disenno_2d"},
+        {"nombreServicio":"disenno4", "imagen":"disenno_2d"},
+        {"nombreServicio":"disenno5", "imagen":"disenno_2d"}
+    ],
+    "esmaltado":[
+        {"nombreServicio":"esmaltado1", "imagen":"esmaltado"},
+        {"nombreServicio":"esmaltado2", "imagen":"esmaltado"},
+        {"nombreServicio":"esmaltado3", "imagen":"esmaltado"},
+        {"nombreServicio":"esmaltado4", "imagen":"esmaltado"},
+        {"nombreServicio":"esmaltado5", "imagen":"esmaltado"}
+    ],
+    "manicura":[
+        {"nombreServicio":"manicura1", "imagen":"manicura"},
+        {"nombreServicio":"manicura2", "imagen":"manicura"},
+        {"nombreServicio":"manicura3", "imagen":"manicura"},
+        {"nombreServicio":"manicura4", "imagen":"manicura"},
+        {"nombreServicio":"manicura5", "imagen":"manicura"}
+    ], 
+    "pedicura":[
+        {"nombreServicio":"pedicura1", "imagen":"pedicura"},
+        {"nombreServicio":"pedicura2", "imagen":"pedicura"},
+        {"nombreServicio":"pedicura3", "imagen":"pedicura"},
+        {"nombreServicio":"pedicura4", "imagen":"pedicura"},
+        {"nombreServicio":"pedicura5", "imagen":"pedicura"}
+    ]
+}

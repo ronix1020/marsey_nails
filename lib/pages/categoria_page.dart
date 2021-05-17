@@ -7,35 +7,38 @@ class CategoriaPage extends StatelessWidget {
 
   CategoriaPage(this.categoria);
 
+  final List<Map<String, String>> listaServicios = [
+    {"nombreServicio": "Arte 1", "image": "acrilicas"},
+    {"nombreServicio": "arte 2", "image": "acrilicas"},
+    {"nombreServicio": "arte 3", "image": "acrilicas"},
+    {"nombreServicio": "arte 4", "image": "acrilicas"}
+  ];
+
   //TO DO: debe hacerse una funcion para poder seleccionar la categoria de fotos
-  //Una 
+  //Una
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.purple[200],
+        title: Text(categoria),
+      ),
       body: Stack(
         alignment: Alignment.topLeft,
         children: [
-          SingleChildScrollView(
+          // Construimos la lista de los servicios
+          ListView.builder(
+            itemBuilder: (context, index) {
+              return WidgetCard(
+                //enviamos la lista al widget card que generamos
+                imagen: listaServicios[index]['image'],
+                texto: listaServicios[index]['nombreServicio'],
+                colorText: Colors.white,
+              );
+            },
+            itemCount: listaServicios.length,
             scrollDirection: Axis.vertical,
-            child: Column(
-              children: [
-                Container(height: 100.0,),
-                WidgetCard(imagen: 'acrilicas', texto: categoria ,colorText: Colors.white,)
-              ],
-            ),
-          ),
-          Positioned(
-            top: 0.0,
-            left: 0.0,
-            right: 0.0,
-            child: AppBar(
-              title: Text(categoria),
-              leading: IconButton(icon: Icon(Icons.arrow_back, color: Colors.purpleAccent,), 
-              onPressed: () => Navigator.of(context).pop()),
-              backgroundColor: Colors.purple[200],
-              elevation: 0.0,
-            ),
           ),
         ],
       ),
