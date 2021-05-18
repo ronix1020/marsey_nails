@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         var routes = <String, WidgetBuilder>{
           "categoria" : ( _ ) => CategoriaPage(settings.arguments),
           "inicio"    : ( _ ) => InicioPage(),
-          "/"         : ( _ ) => TutoPage(),
+          "/"         : ( _ ) => TutoPage()
         };
         WidgetBuilder builder = routes[settings.name];
         return MaterialPageRoute(builder: ( _ ) => builder( _ ));

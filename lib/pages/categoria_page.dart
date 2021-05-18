@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:marsey_nails/widgets/card_generator_widget.dart';
+import 'package:marsey_nails/widgets/card_generator_widget_products.dart';
 
 class CategoriaPage extends StatelessWidget {
   final String categoria;
@@ -21,7 +22,7 @@ class CategoriaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.purple[200],
+        backgroundColor: Colors.purple[400],
         title: Text(categoria),
       ),
       body: Stack(
@@ -30,11 +31,13 @@ class CategoriaPage extends StatelessWidget {
           // Construimos la lista de los servicios
           ListView.builder(
             itemBuilder: (context, index) {
-              return WidgetCard(
+              return WidgetProducts(
                 //enviamos la lista al widget card que generamos
                 imagen: listaServicios[index]['image'],
-                texto: listaServicios[index]['nombreServicio'],
-                colorText: Colors.white,
+                titulo: listaServicios[index]['nombreServicio'],
+                descripcion: 'Esta es una breve descripcion',
+                precio: 19.99,
+                colorTitulo: Colors.purple[400]
               );
             },
             itemCount: listaServicios.length,
